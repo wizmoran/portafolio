@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" >
+    
+    <title>Encoder Decoder</title>
+  </head>
+  <body>
+    <header>
+        <h1>ENCODER DECODER</h1>
+    </header>
+    <main>
+        <form>
+          <p id="lowercaseP">Use only lowercase</p>
+            
+            <textarea id="ioTextArea" cols="50" rows="10" placeholder="Enter text"></textarea>
+            <br> 
+            <input id="encodeBtn" type="button" value="Encode" onclick="encode()">
+            <input id="decodeBtn" type="button" value="Decode" onclick="decode()">
+            <input id="copyBtn"   type="button" value="Copy" onclick="copyToClipboard()">
+            <input id="cleanBtn"  type="button" value="Clean" onclick="cleanTextArea()">
+            <br>
+            
+            
+        </form>
+    </main>
+    <script src="decoder.js"></script>
+  </body>
+</html>
